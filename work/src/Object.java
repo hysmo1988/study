@@ -9,7 +9,17 @@ public class Object {
         System.out.println("--" + new Object(){}.getClass().getEnclosingMethod().getName() + "--");
         // int -> char
         int i = 1;
+        // 1というUnicode文字表現は存在しない
+        System.out.println((char)i); 
+        // 0x31はUnicode16進数表記の'1'の値 -> 1を出力
+        System.out.println((char)0x31); 
+        // 49はUnicode10進数表記の'1'の値 -> 1を出力
+        System.out.println((char)49);
+        // '0'のUnicode10進数表記48に1を加算すると49になる
+        // '49'というchar文字を出力する -> 49を出力
         System.out.println((char)'0' + i);
+        // '0'のUnicode10進数表記48に1を加算すると49になる
+        // 49はUnicode10進数表記の'1'の値 -> 1を出力
         System.out.println((char)('0' + i));
     }
 

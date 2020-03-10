@@ -17,5 +17,14 @@ public class App {
         Arrays.sort(binsArray);
         System.out.println(Arrays.toString(binsArray));
         new BinSearch().search(binsArray, binsKey);
+
+        // 順列
+        System.out.println("---Permutation---");
+        String[] sPerm = {"A", "B", "C"};
+        Integer[] iPerm = {1, 2, 3};
+		Permutation.get(sPerm);
+		Permutation.get(iPerm);
+		Permutation.print(sPerm);
+		Permutation.print(iPerm);
     }
 }
